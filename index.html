@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body data-theme="light">
+  <div class="calculator">
+    <div class="calc-controls">
+      <button id="history-btn">Show History</button>
+      <button id="clear-history">Clear History</button>
+      <button id="theme-btn">Dark Mode</button>
+    </div>
+
+    <div id="display" class="display">0</div>
+
+    <div class="buttons">
+      <button data-type="clear">C</button>
+      <button data-type="delete">⌫</button>
+      <button data-type="operator" data-value="÷">÷</button>
+      <button data-type="operator" data-value="x">x</button>
+      
+
+      <button data-type="digit" data-value="7">7</button>
+      <button data-type="digit" data-value="8">8</button>
+      <button data-type="digit" data-value="9">9</button>
+      <button data-type="operator" data-value="-">-</button>
+      
+
+      <button data-type="digit" data-value="4">4</button>
+      <button data-type="digit" data-value="5">5</button>
+      <button data-type="digit" data-value="6">6</button>
+      <button data-type="operator" data-value="+">+</button>
+      
+
+      <button data-type="digit" data-value="1">1</button>
+      <button data-type="digit" data-value="2">2</button>
+      <button data-type="digit" data-value="3">3</button>
+      <button data-type="equals">=</button>
+      <button data-type="digit" data-value="0" style="grid-column: span 2">0</button>
+      <button data-type="decimal" data-value=".">.</button>
+    </div>
+
+    <div id="history-panel" class="history-panel hidden">
+      <h3>History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
